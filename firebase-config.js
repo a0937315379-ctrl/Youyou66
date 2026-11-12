@@ -1,8 +1,10 @@
-// 在 Firebase 控制台「專案設定 > 您的應用程式 > 網頁應用程式」取得設定並填入。
-// 這些公開的 Web SDK 設定並非密碼；真正的權限由 Firestore Rules 決定。
+
 export const firebaseConfig = {
-  apiKey: "REPLACE_WITH_API_KEY",
-  authDomain: "REPLACE_WITH_PROJECT_ID.firebaseapp.com",
-  projectId: "REPLACE_WITH_PROJECT_ID",
-  appId: "REPLACE_WITH_APP_ID"
+  apiKey: "AIzaSyCkw0dM38UhXhz0RH7UgUdYwRTXNUp5c6o",
+  authDomain: "you-you-66.firebaseapp.com",
+  projectId: "you-you-66",
+  storageBucket: "you-you-66.firebasestorage.app",
+  messagingSenderId: "46312454360",
+  appId: "1:46312454360:web:9f0c70c132aba072677fad",
+  measurementId: "G-J9CJW83P4M"
 };
