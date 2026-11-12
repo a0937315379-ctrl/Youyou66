@@ -25,7 +25,7 @@ $('#survey').addEventListener('submit',async e=>{
   const answers=questions.map((item,i)=>({question:item.q,answer:item.options.length?[...document.querySelectorAll(`input[name=q${i}]:checked`)].map(x=>x.value):document.getElementById(`q${i}`).value.trim()}));
   const app=initializeApp(firebaseConfig);const auth=getAuth(app);await signInAnonymously(auth);const db=getFirestore(app);
   await addDoc(collection(db,'responses'),{answers,extra:$('#extra').value.trim(),createdAt:serverTimestamp(),version:1});
-  $('#survey').innerHTML='<section class="card"><h2>已成功送出</h2><p>謝謝你認真回答。這份答案已保存，問卷建立者可以查看。</p></section>';
+  $('#survey').innerHTML='<section class="card"><h2>已成功送出</h2><p>謝謝你認真回答。</p></section>';
   window.scrollTo({top:0,behavior:'smooth'});
  }catch(err){console.error(err);$('#status').textContent=`送出失敗：${err.code||'連線或資料庫權限問題'}。請確認 Firebase 設定與規則後重試。`;$('#status').className='status bad';button.disabled=false;}
 });
