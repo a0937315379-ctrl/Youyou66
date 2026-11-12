@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>關係心情探索</title><link rel="stylesheet" href="style.css"></head><body>
+<main class="wrap"><header class="hero"><div class="eyebrow">A SPACE FOR HONEST FEELINGS</div><h1>關係心情探索</h1><p>有些感受不容易當面說。這份問卷沒有標準答案，你可以依照現在真實的心情回答。</p></header>
+<section class="notice"><strong>作答前請先知道</strong><p>按下「送出答案」後，你的選擇與文字會儲存到問卷建立者的 Firebase 資料庫，並由問卷建立者查看。請只填寫你願意讓對方知道的內容。你可以選擇不回答任何題目，也可以不送出。</p></section>
+<form id="survey" novalidate><div id="questions"></div><section class="card"><h2>最後，想對對方說的話（選填）</h2><label for="extra" class="muted">如果有題目沒涵蓋到的感受，可以寫在這裡。</label><textarea id="extra" rows="5" maxlength="3000" placeholder="我真正想讓你知道的是……"></textarea></section>
+<section class="card"><label class="agree"><input id="consent" type="checkbox" required>我知道答案送出後，問卷建立者可以查看並保存我的回覆。</label><button id="submit" type="submit" disabled>送出答案</button><p id="status" class="status" role="status" aria-live="polite"></p></section></form><footer>感受可以改變。這份回覆只代表填寫當下的想法。</footer></main><script type="module" src="app.js"></script></body></html>
